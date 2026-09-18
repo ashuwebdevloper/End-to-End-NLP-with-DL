@@ -21,11 +21,9 @@ E. Emotion emojis
 """
 #A. Model Path (BiGRU)
 
-model_path = "C:\\Users\\aboyc\\End-to-End NLP with DL\\Artifacts\\BiGRU_Model.keras"
+model_path = "Artifacts/BiGRU_Model.keras"
 
-#B. Tokenizer Path
-tokenizer_path = "C:\\Users\\aboyc\\End-to-End NLP with DL\\Artifacts\\tokenizer (1).pkl"
-
+tokenizer_path = "Artifacts/tokenizer (1).pkl"
 #C. Max Sequence Length
 max_sequence_length = 50
 
