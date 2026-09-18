@@ -71,7 +71,7 @@ B. Prediciton Response -> Output schema the emotion to predict. -done
 C. Health Response (Server health check)
 """
 
-class TextInput(BaseModel):
+class TextInput(BaseModel): 
     text : str = Field(
         ...,
         min_length=1,
@@ -94,6 +94,7 @@ class HealthResponse(BaseModel):
 4. Model Loading and LifeSpan Management
 Load the model and toknizer once the server starts up.
 """
+'''lif span load the tokenixsr and run the model and then wait for the request and once the server is closed then remove the model from memory.'''
 dl_model = {} #{1. BiGRU, 2. Tokenizer}-> True , {} -> False
 
 @asynccontextmanager
