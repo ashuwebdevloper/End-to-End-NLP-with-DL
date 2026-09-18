@@ -1,4 +1,3 @@
-
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.preprocessing.text import Tokenizer
 from fastapi.staticfiles import StaticFiles
@@ -12,9 +11,6 @@ import numpy as np
 import pickle
 import re
 
-
-
-
 """
 1. We are going to make some constants like:
 A. Model Path (BiGRU)
@@ -24,10 +20,11 @@ D. Emotion Labels
 E. Emotion emojis
 """
 #A. Model Path (BiGRU)
-model_path = "Artifacts/BiGRU_Model.keras"
+
+model_path = "C:\\Users\\aboyc\\End-to-End NLP with DL\\Artifacts\\BiGRU_Model.keras"
 
 #B. Tokenizer Path
-tokenizer_path = "Artifacts/tokenizer.pkl"
+tokenizer_path = "C:\\Users\\aboyc\\End-to-End NLP with DL\\Artifacts\\tokenizer (1).pkl"
 
 #C. Max Sequence Length
 max_sequence_length = 50
